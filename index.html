@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>To Do App!</title>
+
+    <style>
+        body{
+            text-align: center;
+            margin-top: 100px;
+            background-color: #EEEEEE;
+        }
+
+        #todo-item{
+            height: 40px;
+            width: 500px;
+            text-align: center;
+        }
+        .down{
+            margin-top: 20px;
+            margin-left: 20px;
+            text-align: center;
+        }
+        .li-btn{
+            margin-top: -5px;
+            margin-left: 20px;
+            text-align: center;
+
+        }
+        .li-text{
+            font-size: 20px;
+            margin-right: 20px;
+            text-align: center;
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            color: #A04000;
+        }
+        #list{
+            margin-top: 20px;
+        }
+    </style>
+
+
+
+  </head>
+
+    <body>
+
+
+    <div>
+
+        <input type="text" id="todo-item" placeholder="Enter To Do" class="rounded">               <br/>
+        <button type="button" onclick="addToDo()" class="btn btn-outline-primary down">Add Items</button>
+        <button type="button" onclick="deleteAll()" class="btn btn-outline-success down">Delete All</button>
+
+    </div>
+
+    <div>
+
+        <ul id="list">
+
+        </ul>
+
+    </div>
+
+
+
+        <script src="app.js"></script>
+    </body>
+</html>
